@@ -1,0 +1,170 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg, #000, #1a1a1a);
+    color: white;
+    overflow-x: hidden;
+}
+
+nav{
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+nav h1{
+    font-size: 45px;
+    text-shadow: 0 0 10px #00e0ff;
+    margin-bottom: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero{
+    height: 550px;
+    background: url(https://images.pexels.com/photos/226737/pexels-photo-226737.jpeg) no-repeat center center/cover;
+    display:flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+.hero h2{
+    font-size: 40px;
+    color: white;
+    text-shadow:0 0 15px #000 ;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+}
+
+main{
+    padding: 80px 40px;
+    text-align: center;
+    background: #111;
+}
+
+main h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+main p{
+    max-width: 700px;
+    margin: 0 auto 50px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.card{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 320px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 224, 255, 0.2);
+    border: 2px solid rgba(0, 224, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+footer{
+    background: #00e0ff;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+    </style>
+    <title>Cumpleaños Carlita</title>
+</head>   
+<body>
+    <nav>
+        <h1>Cumpleaños</h1>
+        <ul>
+            <li>Inicio</li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>Cumpleaños de Carlita</h2>
+    </div>
+    <main>
+        <h2>ven a mi Cumpleaños</h2>
+        <p>Te invito a que me acompañes en mi cumpleaños, nos vamos a divertir!</p>
+    <div class="cards">
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/81/52/42/815242a027abed00bd762a2b60bc0d64.jpg">
+        <div class="card-content">
+            <h3>Dia:</h3>
+            <p>5 Julio 2025</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://www.laconfiteriacolombiana.com/images/NOTICIAS-2016/conoce-la-historia-oficial-del-cumpleanos01.jpg">
+        <div class="card-content">
+            <h3>Por favor confirmar</h3>
+            <p>con: carlita</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.pexels.com/photos/7412013/pexels-photo-7412013.jpeg">
+        <div class="card-content">
+            <h3>Lugar:</h3>
+            <p>A confirmar</p>
+        </div>
+    </div>
+    </div>
+        </p>
+    </main>
+</body>
+</html>
